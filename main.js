@@ -7,7 +7,7 @@ function countCookie() {
     color += letters[Math.floor(Math.random() * letters.length)];
     document.getElementById("counter").innerHTML = count;
     if (count % 10 == 0) {
-        document.getElementById("note").innerHTML = "congrate you just gained 1 lb to your love body!!! :)";
+        document.getElementById("note").innerHTML = "congrate you just gained 1 lb to your lovely body!!! :)";
         ran_col();
     }
 }
