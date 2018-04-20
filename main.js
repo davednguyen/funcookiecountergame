@@ -10,7 +10,7 @@ function countCookie() {
     if (count % 10 == 0) {
         document.getElementById("note").innerHTML = "congrats you just gained " + lb + "lb to your Lovely body!!! :)";
         ran_col();
-        lb = lb + 1;
+        lb += 1;
     }
 }
 
@@ -53,7 +53,7 @@ function playGuessingGame(guess) {
 
 // playGuessingGame(prompt("guess a tree"));
 
-var playGuessingGame = function(guess) {
+var playGuessingGame = (guess = "nothing") => {
     counter2 += 1;
     if (trees.indexOf(guess) >= 0) {
         alert("go got it!");
@@ -67,4 +67,4 @@ var playGuessingGame = function(guess) {
     }
 }
 
-// playGuessingGame(prompt("guess a tree"));
+playGuessingGame(prompt("guess a tree"));
