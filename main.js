@@ -10,7 +10,7 @@ function countCookie() {
     if (count % 10 == 0) {
         document.getElementById("note").innerHTML = "congrats you just gained " + lb + "lb to your Lovely body!!! :)";
         ran_col();
-        lb++;
+        lb = lb + 1;
     }
 }
 
