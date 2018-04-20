@@ -12,6 +12,11 @@ function countCookie() {
         ran_col();
         lb += 1;
     }
+
+    if (count == 20) {
+        document.getElementById("clickable").src = "monkey.jpg";
+        document.getElementById("note").innerHTML = "you ate too much :)";
+    }
 }
 
 let img = document.querySelector("img#clickable");
@@ -24,11 +29,15 @@ function clickHandler() {
     counter++;
     console.log(counter);
     document.querySelector("p#output").innerHTML = counter;
+    if (counter == 20) {
+        document.querySelector("img#clickable").setAttribute("src", "monkey.jpg");
+        document.getElementById("note").innerHTML = "you ate too much :)";
+    }
 }
 
 function ran_col() { //function name
     let color = '#'; // hexadecimal starting symbol
-    const letters = ['FF0000', '00FF00', '0000FF', 'FFFF00', '00FFFF', 'FF00FF', 'C0C0C0']; //Set your colors here
+    const letters = ['FF0000', '00FF00', '0000FF', 'FFFF00', '00FFFF', 'FF00FF', 'C0C0C0']; //Set your colors here  
     color += letters[Math.floor(Math.random() * letters.length)];
     document.getElementById('note').style.background = color; // Setting the random color on your div element.
 }
