@@ -67,4 +67,4 @@ var playGuessingGame = (guess = "nothing") => {
     }
 }
 
-playGuessingGame(prompt("guess a tree"));
+// playGuessingGame(prompt("guess a tree"));
