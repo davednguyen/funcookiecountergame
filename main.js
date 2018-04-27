@@ -24,7 +24,7 @@ function countCookie() {
     var indexNumber = Math.floor(Math.random() * Math.floor(9));
     var location = "location" + indexNumber;
     currentlocation = location;
-    document.getElementById(previouslocation).src = "green.jpg";
+    document.getElementById(previouslocation).src = "greenface.jpg";
     document.getElementById(currentlocation).src = "monkeybanana.jpg";
     previouslocation = location;
 }
