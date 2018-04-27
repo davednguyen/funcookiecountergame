@@ -2,6 +2,8 @@ let count = 0;
 let color = '#'; // hexadecimal starting symbol
 const letters = ['000000', 'FF0000', '00FF00', '0000FF', 'FFFF00', '00FFFF', 'FF00FF', 'C0C0C0']; //Set your colors here
 let lb = 1;
+var previouslocation = "location0";
+var currentlocation = "";
 
 function countCookie() {
     count++;
@@ -17,6 +19,14 @@ function countCookie() {
         document.getElementById("clickable").src = "monkey.jpg";
         document.getElementById("note").innerHTML = "you ate too much :)";
     }
+
+
+    var indexNumber = Math.floor(Math.random() * Math.floor(9));
+    var location = "location" + indexNumber;
+    currentlocation = location;
+    document.getElementById(previouslocation).src = "green.jpg";
+    document.getElementById(currentlocation).src = "monkeybanana.jpg";
+    previouslocation = location;
 }
 
 let img = document.querySelector("img#clickable");
