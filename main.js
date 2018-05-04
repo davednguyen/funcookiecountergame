@@ -26,7 +26,12 @@ function countCookie() {
     currentlocation = location;
     document.getElementById(previouslocation).src = "greenface.jpg";
     document.getElementById(currentlocation).src = "monkeybanana.jpg";
+    document.getElementById(currentlocation).style = "transform:scale(3)";
     previouslocation = location;
+    // if (count % 10 == 0) {
+    //     document.getElementById("clickable").style = "transform:rotate(45deg)";
+    // }
+    document.getElementById(currentlocation).style = "transform:scale(1)";
 }
 
 let img = document.querySelector("img#clickable");

@@ -13,3 +13,7 @@ th {
     width: 65px;
     height: 65px;
 }
+
+img:active {
+    transform: scale(3);
+}
