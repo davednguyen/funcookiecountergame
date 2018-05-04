@@ -17,3 +17,7 @@ th {
 img:active {
     transform: scale(3);
 }
+
+img:focus {
+    transform: scale(3);
+}
