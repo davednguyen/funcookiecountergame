@@ -1,0 +1,57 @@
+img {
+    width: 60px;
+    height: 60px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    width: 65px;
+    height: 65px;
+}
+
+img:active {
+    transform: scale(3);
+}
+
+img:focus {
+    transform: scale(3);
+}
+
+.note {
+    transition: opacity 3s;
+}
+
+@keyframes rainbowspin {
+    // go through 5 colors;
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: orange;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+}
+
+.rainbow {
+    width: 50%;
+    height: 2rem;
+    background-color: black;
+    // animation: rainbowspin 10s 3 alternate;
+    //animation: rainbowspin 3s infinite alternate;
+    animation: rainbowspin 3s infinite;
+    border-radius: 20%;
+}

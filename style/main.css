@@ -21,3 +21,7 @@ img:active {
 img:focus {
     transform: scale(3);
 }
+
+.note {
+    transition: opacity 3s;
+}

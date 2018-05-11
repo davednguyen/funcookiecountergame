@@ -26,12 +26,14 @@ function countCookie() {
     currentlocation = location;
     document.getElementById(previouslocation).src = "greenface.jpg";
     document.getElementById(currentlocation).src = "monkeybanana.jpg";
-    document.getElementById(currentlocation).style = "transform:scale(3)";
+    document.getElementById(currentlocation).style = "transform:scale(1.5)";
+    //document.getElementById(currentlocation).style.transition = "transform 2s";
     previouslocation = location;
     // if (count % 10 == 0) {
     //     document.getElementById("clickable").style = "transform:rotate(45deg)";
     // }
-    document.getElementById(currentlocation).style = "transform:scale(1)";
+    document.getElementById(currentlocation).style.background = "yellow";
+    document.getElementById(currentlocation).style.transition = "background 4s";
 }
 
 let img = document.querySelector("img#clickable");
@@ -55,6 +57,7 @@ function ran_col() { //function name
     const letters = ['FF0000', '00FF00', '0000FF', 'FFFF00', '00FFFF', 'FF00FF', 'C0C0C0']; //Set your colors here  
     color += letters[Math.floor(Math.random() * letters.length)];
     document.getElementById('note').style.background = color; // Setting the random color on your div element.
+    document.getElementById('note').style.transition = "background 4s";
 }
 
 const trees = ["oak", "elm", "lemon"];
@@ -92,3 +95,7 @@ var playGuessingGame = (guess = "nothing") => {
 }
 
 // playGuessingGame(prompt("guess a tree"));
+
+function monkeyGame() {
+    document.getElementById("mainFrame").src = "cookiegame.html";
+}

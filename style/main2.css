@@ -1,0 +1,61 @@
+img {
+  width: 60px;
+  height: 60px; }
+
+table,
+th,
+td {
+  border: 1px solid black; }
+
+th {
+  width: 65px;
+  height: 65px; }
+
+img:active {
+  -webkit-transform: scale(3);
+          transform: scale(3); }
+
+img:focus {
+  -webkit-transform: scale(3);
+          transform: scale(3); }
+
+.note {
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s; }
+
+@-webkit-keyframes rainbowspin {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  75% {
+    background-color: green; }
+  100% {
+    background-color: blue;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); } }
+
+@keyframes rainbowspin {
+  0% {
+    background-color: red; }
+  25% {
+    background-color: orange; }
+  50% {
+    background-color: yellow; }
+  75% {
+    background-color: green; }
+  100% {
+    background-color: blue;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); } }
+.rainbow {
+  width: 50%;
+  height: 2rem;
+  background-color: black;
+  -webkit-animation: rainbowspin 3s infinite;
+          animation: rainbowspin 3s infinite;
+  border-radius: 20%; }
+
+/*# sourceMappingURL=main2.css.map */
