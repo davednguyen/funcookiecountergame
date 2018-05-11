@@ -33,6 +33,7 @@ function countCookie() {
     //     document.getElementById("clickable").style = "transform:rotate(45deg)";
     // }
     document.getElementById(currentlocation).style.background = "yellow";
+    document.getElementById(currentlocation).classList.add("rainbow");
     document.getElementById(currentlocation).style.transition = "background 4s";
 }
 
